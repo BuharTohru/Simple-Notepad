@@ -1,0 +1,18 @@
+D:\Visual Studio Projects\Simple Notepad Plus\bin\Debug\netcoreapp3.1\Simple Notepad.exe
+D:\Visual Studio Projects\Simple Notepad Plus\bin\Debug\netcoreapp3.1\Simple Notepad.deps.json
+D:\Visual Studio Projects\Simple Notepad Plus\bin\Debug\netcoreapp3.1\Simple Notepad.runtimeconfig.json
+D:\Visual Studio Projects\Simple Notepad Plus\bin\Debug\netcoreapp3.1\Simple Notepad.runtimeconfig.dev.json
+D:\Visual Studio Projects\Simple Notepad Plus\bin\Debug\netcoreapp3.1\Simple Notepad.dll
+D:\Visual Studio Projects\Simple Notepad Plus\bin\Debug\netcoreapp3.1\Simple Notepad.pdb
+D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Notepad Plus.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple_Notepad_Plus.Aboute.resources
+D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple_Notepad_Plus.Form1.resources
+D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple_Notepad_Plus.Properties.Resources.resources
+D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Notepad Plus.csproj.GenerateResource.cache
+D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Notepad Plus.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Notepad Plus.AssemblyInfoInputs.cache
+D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Notepad Plus.AssemblyInfo.cs
+D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Notepad Plus.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Notepad.dll
+D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Notepad.pdb
+D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Notepad Plus.genruntimeconfig.cache
