@@ -4,7 +4,6 @@ D:\Visual Studio Projects\Simple Notepad Plus\bin\Debug\netcoreapp3.1\Simple Not
 D:\Visual Studio Projects\Simple Notepad Plus\bin\Debug\netcoreapp3.1\Simple Notepad.runtimeconfig.dev.json
 D:\Visual Studio Projects\Simple Notepad Plus\bin\Debug\netcoreapp3.1\Simple Notepad.dll
 D:\Visual Studio Projects\Simple Notepad Plus\bin\Debug\netcoreapp3.1\Simple Notepad.pdb
-D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Notepad Plus.csproj.AssemblyReference.cache
 D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple_Notepad_Plus.Aboute.resources
 D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple_Notepad_Plus.Form1.resources
 D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple_Notepad_Plus.Properties.Resources.resources
@@ -16,3 +15,4 @@ D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Not
 D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Notepad.dll
 D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Notepad.pdb
 D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Notepad Plus.genruntimeconfig.cache
+D:\Visual Studio Projects\Simple Notepad Plus\obj\Debug\netcoreapp3.1\Simple Notepad Plus.csproj.AssemblyReference.cache

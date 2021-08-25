@@ -12,6 +12,7 @@ using System.Windows.Forms;
 namespace Simple_Notepad_Plus
 {
     public partial class Form1 : Form
+
     {
         string path;
         public Form1()
@@ -32,7 +33,7 @@ namespace Simple_Notepad_Plus
                             await sw.WriteLineAsync(textBox.Text);
                         }
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -62,7 +63,6 @@ namespace Simple_Notepad_Plus
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
         }
 
         private void textBox_TextChanged(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace Simple_Notepad_Plus
 
         private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            using(Aboute frm=new Aboute()) 
+            using (Aboute frm = new Aboute())
             {
                 frm.ShowDialog();
             }
@@ -80,15 +80,23 @@ namespace Simple_Notepad_Plus
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            path = string.Empty;
-            textBox.Clear();
+            DialogResult dialogResult = MessageBox.Show("Changes will be lost", "Simple Notepad", MessageBoxButtons.YesNo);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                textBox.Text = "";
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+
+            }
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "Text Documents|*.txt", ValidateNames = true, Multiselect = false })
             {
-                if(ofd.ShowDialog()==DialogResult.OK)
+                if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     try
                     {
@@ -115,11 +123,11 @@ namespace Simple_Notepad_Plus
 
         private async void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(path))
+            if (string.IsNullOrEmpty(path))
             {
-                using(SaveFileDialog sfd=new SaveFileDialog() {Filter="Text Documents|*.txt", ValidateNames = true})
+                using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Text Documents|*.txt", ValidateNames = true })
                 {
-                    if(sfd.ShowDialog()==DialogResult.OK)
+                    if (sfd.ShowDialog() == DialogResult.OK)
                     {
                         try
                         {
@@ -151,5 +159,49 @@ namespace Simple_Notepad_Plus
                 }
             }
         }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
+                printDocument1.Print();
+
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString(textBox.Text, new Font("UD Digi Kyokasho NK-R", 11, FontStyle.Regular), Brushes.Black, new PointF(100, 100));
+        }
+
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            textBox.Text = System.DateTime.Now.ToString();
+        }
+
+        private void fontsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+            {
+                textBox.Font = fontDialog1.Font;
+            }
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+            textBox.Text = File.ReadAllText(openFileDialog1.FileName);
+        }
+        private void colorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            {
+                ColorDialog col = new ColorDialog();
+                col.ShowDialog();
+                textBox.SelectionColor = col.Color;
+            }
+        }
+        }
     }
-}
