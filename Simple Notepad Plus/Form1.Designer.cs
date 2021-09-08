@@ -161,14 +161,14 @@ namespace Simple_Notepad_Plus
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.aboutToolStripMenuItem.Text = "Time/Date";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // fontsToolStripMenuItem
             // 
             this.fontsToolStripMenuItem.Name = "fontsToolStripMenuItem";
-            this.fontsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fontsToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.fontsToolStripMenuItem.Text = "Fonts";
             this.fontsToolStripMenuItem.Click += new System.EventHandler(this.fontsToolStripMenuItem_Click);
             // 
@@ -179,6 +179,7 @@ namespace Simple_Notepad_Plus
             | System.Windows.Forms.Keys.C)));
             this.colorsToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.colorsToolStripMenuItem.Text = "Colors";
+            this.colorsToolStripMenuItem.Click += new System.EventHandler(this.colorsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem1
             // 
@@ -220,7 +221,7 @@ namespace Simple_Notepad_Plus
             // 
             this.textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.textBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox.Font = new System.Drawing.Font("UD Digi Kyokasho NK-R", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox.ForeColor = System.Drawing.Color.Silver;
             this.textBox.Location = new System.Drawing.Point(0, 24);
             this.textBox.Name = "textBox";
@@ -230,13 +231,13 @@ namespace Simple_Notepad_Plus
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(1199, 663);
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("HGSMinchoB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";

@@ -179,8 +179,11 @@ namespace Simple_Notepad_Plus
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            textBox.Text = System.DateTime.Now.ToString();
+            //If has some text, adds the data in the top of text, and adds the rest of the text in another line
+            if (!String.IsNullOrEmpty(textBox.Text))
+                textBox.Text = DateTime.Now.ToString() + Environment.NewLine + textBox.Text;
+            else
+                textBox.Text = DateTime.Now.ToString();
         }
 
         private void fontsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -197,11 +200,9 @@ namespace Simple_Notepad_Plus
         }
         private void colorsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            {
-                ColorDialog col = new ColorDialog();
-                col.ShowDialog();
-                textBox.SelectionColor = col.Color;
-            }
-        }
+            ColorDialog col = new ColorDialog();
+            col.ShowDialog();
+            textBox.SelectionColor = col.Color;
         }
     }
+}
